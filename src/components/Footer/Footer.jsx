@@ -16,7 +16,7 @@ const footerGroups = [
     links: [
       { label: "Home", path: "/" },
       { label: "How It Works", path: "/how-it-works" },
-      { label: "Track Parcel", path: "/track" },
+      { label: "Get My Parcel", path: "/get-my-parcel" },
       { label: "About Relay", path: "/about" },
     ],
   },
@@ -73,7 +73,7 @@ function Footer() {
             </p>
           </div>
 
-          <Link to="/track" className="footer__cta-button">
+          <Link to="/get-my-parcel" className="footer__cta-button">
             <span>Get Started</span>
             <FiArrowUpRight aria-hidden="true" />
           </Link>

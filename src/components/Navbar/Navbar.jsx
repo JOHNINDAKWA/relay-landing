@@ -19,8 +19,8 @@ const navigationItems = [
     path: "/how-it-works",
   },
   {
-    label: "Track Parcel",
-    path: "/track",
+    label: "Get My Parcel",
+    path: "/get-my-parcel",
   },
   {
     label: "Become a Relayer",
@@ -172,16 +172,16 @@ function Navbar() {
 
           <div className="navbar__mobile-actions">
             <Link
-              to="/track"
+              to="/get-my-parcel"
               className="navbar__mobile-track"
               onClick={closeMenu}
             >
               <FiPackage aria-hidden="true" />
-              <span>Track a parcel</span>
+              <span>Get my parcel</span>
             </Link>
 
             <Link
-              to="/track"
+              to="/get-my-parcel"
               className="navbar__mobile-primary"
               onClick={closeMenu}
             >
@@ -197,12 +197,12 @@ function Navbar() {
         </nav>
 
         <div className="navbar__actions">
-          <Link to="/track" className="navbar__track-link">
+          <Link to="/get-my-parcel" className="navbar__track-link">
             <FiPackage aria-hidden="true" />
-            <span>Track Parcel</span>
+            <span>Get my parcel</span>
           </Link>
 
-          <Link to="/track" className="navbar__cta">
+          <Link to="/get-my-parcel" className="navbar__cta">
             <span>Get Started</span>
             <FiArrowUpRight aria-hidden="true" />
           </Link>

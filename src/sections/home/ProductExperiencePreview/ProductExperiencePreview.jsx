@@ -123,8 +123,8 @@ function ProductExperiencePreview() {
         </div>
 
         <div className="product-preview__actions">
-          <Link to="/track" className="product-preview__primary-action">
-            Track a parcel
+          <Link to="/get-my-parcel" className="product-preview__primary-action">
+            Get My Parcel
             <FiArrowUpRight aria-hidden="true" />
           </Link>
 

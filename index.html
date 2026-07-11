@@ -1,13 +1,220 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-KE">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>relay-landing</title>
+
+    <!-- Responsive layout -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <!-- Primary SEO -->
+    <title>Relay | Last-Mile Parcel Delivery in Kenya</title>
+
+    <meta
+      name="description"
+      content="Relay connects customers with verified delivery riders who collect parcels from supported bus terminals and deliver them safely to homes and businesses across Kenya."
+    />
+
+    <meta
+      name="keywords"
+      content="parcel delivery Kenya, last mile delivery Kenya, bus parcel delivery, parcel collection Nairobi, delivery riders Kenya, Relay Kenya"
+    />
+
+    <meta name="author" content="Fastech Solutions" />
+    <meta name="application-name" content="Relay" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <link rel="canonical" href="https://relay.co.ke/" />
+
+    <!-- Browser and mobile colours -->
+    <meta name="theme-color" content="#07192f" />
+    <meta
+      name="msapplication-TileColor"
+      content="#07192f"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"
+    />
+
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph: WhatsApp, Facebook and LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Relay" />
+    <meta property="og:locale" content="en_KE" />
+
+    <meta
+      property="og:title"
+      content="Relay | Your Parcel, Delivered to You"
+    />
+
+    <meta
+      property="og:description"
+      content="Request parcel collection from supported bus terminals, pay securely and follow the delivery through the Relay app."
+    />
+
+    <meta property="og:url" content="https://relay.co.ke/" />
+
+    <meta
+      property="og:image"
+      content="https://relay.co.ke/social-preview.jpg"
+    />
+
+    <meta
+      property="og:image:secure_url"
+      content="https://relay.co.ke/social-preview.jpg"
+    />
+
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta
+      property="og:image:alt"
+      content="Relay parcel delivery service in Kenya"
+    />
+
+    <!-- X / Twitter card -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="twitter:title"
+      content="Relay | Your Parcel, Delivered to You"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Relay connects customers with verified riders who collect parcels from supported bus terminals and deliver them safely."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://relay.co.ke/social-preview.jpg"
+    />
+
+    <meta
+      name="twitter:image:alt"
+      content="Relay parcel delivery service in Kenya"
+    />
+
+    <!-- Additional mobile support -->
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    />
+
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Relay"
+    />
+
+    <!-- Prevent automatic phone-number formatting -->
+    <meta
+      name="format-detection"
+      content="telephone=no"
+    />
+
+    <!-- Structured data for search engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://relay.co.ke/#organization",
+            "name": "Relay",
+            "legalName": "Fastech Solutions",
+            "url": "https://relay.co.ke/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://relay.co.ke/logo.png"
+            },
+            "description": "Relay is a last-mile parcel delivery platform connecting customers with independent delivery riders in Kenya.",
+            "email": "support@relay.co.ke",
+            "telephone": "+254716016706",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Nairobi",
+              "addressCountry": "KE"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Kenya"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://relay.co.ke/#website",
+            "url": "https://relay.co.ke/",
+            "name": "Relay",
+            "description": "Last-mile parcel delivery in Kenya.",
+            "publisher": {
+              "@id": "https://relay.co.ke/#organization"
+            },
+            "inLanguage": "en-KE"
+          },
+          {
+            "@type": "Service",
+            "@id": "https://relay.co.ke/#service",
+            "name": "Relay Parcel Delivery",
+            "serviceType": "Last-mile parcel delivery",
+            "provider": {
+              "@id": "https://relay.co.ke/#organization"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Kenya"
+            },
+            "description": "Collection of parcels from supported bus terminals and delivery to customer addresses."
+          }
+        ]
+      }
+    </script>
   </head>
+
   <body>
+    <noscript>
+      Relay requires JavaScript to display this website. Please enable
+      JavaScript in your browser.
+    </noscript>
+
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

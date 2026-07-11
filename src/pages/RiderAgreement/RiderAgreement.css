@@ -1,0 +1,1190 @@
+.rider-agreement-page {
+  overflow: hidden;
+  background-color: #ffffff;
+  color: var(--color-navy-900);
+  scroll-behavior: smooth;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.rider-agreement-hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(4.5rem, 8vw, 7.5rem);
+  background-color: #f4f2ec;
+}
+
+.rider-agreement-hero::before {
+  position: absolute;
+  top: -14rem;
+  right: -10rem;
+  width: 38rem;
+  height: 38rem;
+  background: radial-gradient(
+    circle,
+    rgba(255, 196, 0, 0.18),
+    transparent 70%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.rider-agreement-hero::after {
+  position: absolute;
+  bottom: -19rem;
+  left: -14rem;
+  width: 42rem;
+  height: 42rem;
+  background: radial-gradient(
+    circle,
+    rgba(13, 47, 87, 0.08),
+    transparent 70%
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.rider-agreement-hero__layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  min-height: 38rem;
+  align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.9fr);
+  gap: clamp(3rem, 9vw, 9rem);
+}
+
+.rider-agreement-hero__content {
+  max-width: 52rem;
+}
+
+.rider-agreement-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-navy-700);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.rider-agreement-hero__eyebrow::before {
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-yellow-500);
+  content: "";
+}
+
+.rider-agreement-hero h1 {
+  max-width: 52rem;
+  margin-bottom: 1.4rem;
+  color: var(--color-navy-900);
+  font-size: clamp(3.2rem, 6vw, 5.5rem);
+  font-weight: 680;
+  letter-spacing: -0.067em;
+  line-height: 0.97;
+}
+
+.rider-agreement-hero h1 span {
+  display: block;
+  color: var(--color-yellow-600, #c99700);
+}
+
+.rider-agreement-hero__content > p {
+  max-width: 42rem;
+  margin-bottom: 2.3rem;
+  color: var(--color-navy-800);
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+.rider-agreement-hero__meta {
+  display: grid;
+  max-width: 48rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(13, 47, 87, 0.16);
+  border-left: 1px solid rgba(13, 47, 87, 0.16);
+}
+
+.rider-agreement-hero__meta > div {
+  display: grid;
+  min-height: 5.5rem;
+  align-items: center;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.7rem;
+  padding: 1rem;
+  border-right: 1px solid rgba(13, 47, 87, 0.16);
+  border-bottom: 1px solid rgba(13, 47, 87, 0.16);
+}
+
+.rider-agreement-hero__meta svg {
+  color: var(--color-yellow-600, #c99700);
+  font-size: 1.05rem;
+}
+
+.rider-agreement-hero__meta span {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.rider-agreement-hero__meta small {
+  color: var(--color-grey-600);
+  font-size: 0.62rem;
+}
+
+.rider-agreement-hero__meta strong {
+  color: var(--color-navy-900);
+  font-size: 0.78rem;
+}
+
+/* Hero panel */
+
+.rider-agreement-hero__panel {
+  padding: clamp(2rem, 5vw, 3.5rem);
+  background-color: var(--color-navy-950);
+  box-shadow: 0 30px 80px rgba(7, 25, 47, 0.16);
+}
+
+.rider-agreement-hero__panel-icon {
+  display: grid;
+  width: 5rem;
+  height: 5rem;
+  place-items: center;
+  margin-bottom: 2.3rem;
+  background-color: var(--color-yellow-500);
+  color: var(--color-navy-950);
+  font-size: 1.9rem;
+}
+
+.rider-agreement-hero__panel-label {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--color-yellow-500);
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.rider-agreement-hero__panel h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.rider-agreement-hero__panel > p {
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.rider-agreement-hero__points {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.rider-agreement-hero__points > div {
+  display: grid;
+  min-height: 3.7rem;
+  align-items: center;
+  grid-template-columns: 1.7rem 1fr;
+  gap: 0.7rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+.rider-agreement-hero__points svg {
+  color: var(--color-yellow-500);
+}
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.rider-agreement-intro {
+  padding-block: clamp(4rem, 7vw, 6rem);
+  background-color: #ffffff;
+}
+
+.rider-agreement-intro__layout {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.25fr) minmax(0, 1fr);
+  gap: clamp(2rem, 8vw, 8rem);
+}
+
+.rider-agreement-intro__label {
+  display: inline-flex;
+  height: fit-content;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--color-navy-700);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.rider-agreement-intro__label::before {
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-yellow-500);
+  content: "";
+}
+
+.rider-agreement-intro__layout > div {
+  max-width: 58rem;
+}
+
+.rider-agreement-intro h2 {
+  margin-bottom: 1.2rem;
+  color: var(--color-navy-900);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.rider-agreement-intro p {
+  max-width: 51rem;
+  margin: 0;
+  color: var(--color-navy-800);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   CONTENTS
+   ========================================================= */
+
+.rider-agreement-contents {
+  padding-block: clamp(4rem, 7vw, 6rem);
+  background-color: #f4f2ec;
+}
+
+.rider-agreement-contents__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rider-agreement-contents__header span {
+  color: var(--color-navy-900);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 650;
+  letter-spacing: -0.04em;
+}
+
+.rider-agreement-contents__header p {
+  margin: 0;
+  color: var(--color-navy-700);
+  font-size: 0.82rem;
+}
+
+.rider-agreement-contents__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(13, 47, 87, 0.16);
+  border-left: 1px solid rgba(13, 47, 87, 0.16);
+}
+
+.rider-agreement-contents__grid a {
+  display: grid;
+  min-height: 6.5rem;
+  align-items: center;
+  grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+  gap: 0.8rem;
+  padding: 1.2rem;
+  border-right: 1px solid rgba(13, 47, 87, 0.16);
+  border-bottom: 1px solid rgba(13, 47, 87, 0.16);
+  color: inherit;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.rider-agreement-contents__grid a:hover {
+  background-color: var(--color-navy-900);
+}
+
+.rider-agreement-contents__grid a > span {
+  color: var(--color-yellow-600, #c99700);
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.rider-agreement-contents__grid strong {
+  color: var(--color-navy-900);
+  font-size: 0.84rem;
+}
+
+.rider-agreement-contents__grid svg {
+  color: var(--color-yellow-600, #c99700);
+}
+
+.rider-agreement-contents__grid a:hover strong {
+  color: #ffffff;
+}
+
+/* =========================================================
+   AGREEMENT SECTIONS
+   ========================================================= */
+
+.rider-agreement-section {
+  scroll-margin-top: 7rem;
+  padding-block: clamp(5rem, 9vw, 8rem);
+}
+
+.rider-agreement-section--light {
+  background-color: #ffffff;
+}
+
+.rider-agreement-section--soft {
+  background-color: #f7f6f2;
+}
+
+.rider-agreement-section--dark {
+  background-color: var(--color-navy-950);
+}
+
+.rider-agreement-section__layout {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.38fr) minmax(0, 1fr);
+  gap: clamp(3rem, 9vw, 9rem);
+}
+
+.rider-agreement-section__header {
+  align-self: start;
+}
+
+.rider-agreement-section__number {
+  display: block;
+  margin-bottom: 2rem;
+  color: var(--color-yellow-600, #c99700);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.rider-agreement-section__icon {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  place-items: center;
+  margin-bottom: 1.4rem;
+  background-color: var(--color-navy-900);
+  color: var(--color-yellow-500);
+  font-size: 1.25rem;
+}
+
+.rider-agreement-section__header h2 {
+  max-width: 21rem;
+  margin: 0;
+  color: var(--color-navy-900);
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.rider-agreement-section--dark
+  .rider-agreement-section__header h2 {
+  color: #ffffff;
+}
+
+.rider-agreement-section--dark
+  .rider-agreement-section__icon {
+  background-color: var(--color-yellow-500);
+  color: var(--color-navy-950);
+}
+
+.rider-agreement-section__body {
+  min-width: 0;
+}
+
+.rider-agreement-section__lead {
+  max-width: 52rem;
+  margin: 0 0 2.5rem;
+  color: var(--color-navy-800);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.rider-agreement-section--dark
+  .rider-agreement-section__lead {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.rider-agreement-copy {
+  display: grid;
+  max-width: 56rem;
+  gap: 1.2rem;
+}
+
+.rider-agreement-copy p {
+  margin: 0;
+  color: var(--color-navy-800);
+  font-size: 0.96rem;
+  line-height: 1.85;
+}
+
+/* Contractor responsibilities */
+
+.rider-agreement-responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(13, 47, 87, 0.15);
+  border-left: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-responsibility-grid article {
+  min-height: 10rem;
+  padding: 1.5rem;
+  border-right: 1px solid rgba(13, 47, 87, 0.15);
+  border-bottom: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-responsibility-grid span {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--color-yellow-600, #c99700);
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rider-agreement-responsibility-grid p {
+  margin: 0;
+  color: var(--color-navy-800);
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+/* Lists */
+
+.rider-agreement-checklist,
+.rider-agreement-delivery-list,
+.rider-agreement-conduct {
+  border-top: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-checklist > div,
+.rider-agreement-conduct > div {
+  display: grid;
+  min-height: 4.6rem;
+  align-items: center;
+  grid-template-columns: 2.5rem 2rem minmax(0, 1fr);
+  gap: 0.8rem;
+  border-bottom: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-checklist span,
+.rider-agreement-conduct span,
+.rider-agreement-delivery-list span {
+  color: var(--color-yellow-600, #c99700);
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.rider-agreement-checklist svg,
+.rider-agreement-conduct svg {
+  color: var(--color-yellow-600, #c99700);
+}
+
+.rider-agreement-checklist p,
+.rider-agreement-conduct p {
+  margin: 0;
+  color: var(--color-navy-900);
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+.rider-agreement-delivery-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-left: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-delivery-list > div {
+  display: grid;
+  min-height: 5.3rem;
+  align-items: center;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 0.8rem;
+  padding: 1rem;
+  border-right: 1px solid rgba(13, 47, 87, 0.15);
+  border-bottom: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-delivery-list p {
+  margin: 0;
+  color: var(--color-navy-900);
+  font-size: 0.82rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+/* Documents */
+
+.rider-agreement-documents {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-documents > div {
+  display: grid;
+  min-height: 4.5rem;
+  align-items: center;
+  grid-template-columns: 2.5rem minmax(0, 1fr) 2rem;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-documents > div > span {
+  color: var(--color-yellow-600, #c99700);
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.rider-agreement-documents strong {
+  color: var(--color-navy-900);
+  font-size: 0.86rem;
+}
+
+.rider-agreement-documents svg {
+  color: var(--color-yellow-600, #c99700);
+}
+
+.rider-agreement-warning,
+.rider-agreement-rating-note,
+.rider-agreement-appeal {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.4rem;
+  border-left: 3px solid var(--color-yellow-500);
+  background-color: #f4f2ec;
+}
+
+.rider-agreement-warning svg,
+.rider-agreement-rating-note svg,
+.rider-agreement-appeal svg {
+  color: var(--color-yellow-600, #c99700);
+  font-size: 1.25rem;
+}
+
+.rider-agreement-warning p,
+.rider-agreement-rating-note p,
+.rider-agreement-appeal p {
+  margin: 0;
+  color: var(--color-navy-800);
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+/* Unassign */
+
+.rider-agreement-unassign {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(13, 47, 87, 0.15);
+  border-left: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-unassign > div {
+  padding: 1.5rem;
+  border-right: 1px solid rgba(13, 47, 87, 0.15);
+  border-bottom: 1px solid rgba(13, 47, 87, 0.15);
+  background-color: #ffffff;
+}
+
+.rider-agreement-unassign span {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--color-yellow-600, #c99700);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.rider-agreement-unassign h3 {
+  margin-bottom: 0.55rem;
+  color: var(--color-navy-900);
+  font-size: 1.05rem;
+}
+
+.rider-agreement-unassign p {
+  margin: 0;
+  color: var(--color-navy-700);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.rider-agreement-note {
+  margin: 1.3rem 0 0;
+  color: var(--color-navy-700);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+/* Earnings */
+
+.rider-agreement-earnings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.rider-agreement-earnings article {
+  min-height: 11rem;
+  padding: 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.rider-agreement-earnings article > span {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--color-yellow-500);
+  font-size: 2.4rem;
+  font-weight: 750;
+  letter-spacing: -0.05em;
+}
+
+.rider-agreement-earnings h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.rider-agreement-payout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.rider-agreement-payout > div {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rider-agreement-payout span {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--color-yellow-500);
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.rider-agreement-payout strong {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.rider-agreement-payout p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.77rem;
+  line-height: 1.6;
+}
+
+.rider-agreement-dark-warning {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.3rem;
+  border-left: 3px solid var(--color-yellow-500);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rider-agreement-dark-warning svg {
+  color: var(--color-yellow-500);
+  font-size: 1.25rem;
+}
+
+.rider-agreement-dark-warning p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+/* Tiers */
+
+.rider-agreement-tiers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(13, 47, 87, 0.15);
+  border-left: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-tiers article {
+  display: grid;
+  min-height: 13rem;
+  align-items: start;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.5rem;
+  border-right: 1px solid rgba(13, 47, 87, 0.15);
+  border-bottom: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-tiers__letter {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  place-items: center;
+  background-color: var(--color-navy-900);
+  color: var(--color-yellow-500);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.rider-agreement-tiers h3 {
+  margin-bottom: 0.45rem;
+  color: var(--color-navy-900);
+  font-size: 1rem;
+}
+
+.rider-agreement-tiers p {
+  margin: 0 0 0.55rem;
+  color: var(--color-navy-700);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.rider-agreement-tiers strong {
+  color: var(--color-yellow-600, #c99700);
+  font-size: 0.72rem;
+}
+
+/* Emergency */
+
+.rider-agreement-emergency {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(13, 47, 87, 0.15);
+  border-left: 1px solid rgba(13, 47, 87, 0.15);
+}
+
+.rider-agreement-emergency > div {
+  min-height: 14rem;
+  padding: 1.5rem;
+  border-right: 1px solid rgba(13, 47, 87, 0.15);
+  border-bottom: 1px solid rgba(13, 47, 87, 0.15);
+  background-color: #ffffff;
+}
+
+.rider-agreement-emergency__icon {
+  display: grid;
+  width: 3.3rem;
+  height: 3.3rem;
+  place-items: center;
+  margin-bottom: 1.4rem;
+  background-color: var(--color-yellow-500);
+  color: var(--color-navy-950);
+  font-size: 1.15rem;
+}
+
+.rider-agreement-emergency h3 {
+  margin-bottom: 0.55rem;
+  color: var(--color-navy-900);
+  font-size: 1rem;
+}
+
+.rider-agreement-emergency p {
+  margin: 0;
+  color: var(--color-navy-700);
+  font-size: 0.77rem;
+  line-height: 1.6;
+}
+
+.rider-agreement-emergency-warning {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--color-navy-950);
+}
+
+.rider-agreement-emergency-warning > svg {
+  color: var(--color-yellow-500);
+  font-size: 1.4rem;
+}
+
+.rider-agreement-emergency-warning > div {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.rider-agreement-emergency-warning span {
+  color: var(--color-yellow-500);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.rider-agreement-emergency-warning p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+/* Suspension */
+
+.rider-agreement-suspension-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.rider-agreement-suspension-list > div {
+  display: grid;
+  min-height: 4.6rem;
+  align-items: center;
+  grid-template-columns: 2.5rem 2rem minmax(0, 1fr);
+  gap: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.rider-agreement-suspension-list > div > span {
+  color: var(--color-yellow-500);
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.rider-agreement-suspension-list svg {
+  color: var(--color-yellow-500);
+}
+
+.rider-agreement-suspension-list p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.83rem;
+}
+
+.rider-agreement-appeal {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rider-agreement-appeal p {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.rider-agreement-appeal a {
+  color: var(--color-yellow-500);
+  font-weight: 750;
+}
+
+/* Privacy link */
+
+.rider-agreement-privacy-link {
+  display: inline-flex;
+  min-height: 3.3rem;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 2rem;
+  padding: 0.85rem 1.1rem;
+  background-color: var(--color-navy-900);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.rider-agreement-privacy-link svg {
+  color: var(--color-yellow-500);
+}
+
+/* Contact */
+
+.rider-agreement-contact {
+  display: grid;
+  align-items: start;
+  grid-template-columns: minmax(0, 0.75fr) minmax(320px, 1.25fr);
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+.rider-agreement-contact__intro > span {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--color-yellow-500);
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.rider-agreement-contact__intro h3 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 650;
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+}
+
+.rider-agreement-contact__intro p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.rider-agreement-contact__details {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.rider-agreement-contact__details a {
+  display: grid;
+  min-height: 5.5rem;
+  align-items: center;
+  grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  color: inherit;
+  transition: padding-inline var(--transition-fast);
+}
+
+.rider-agreement-contact__details a:hover {
+  padding-inline: 1rem;
+}
+
+.rider-agreement-contact__details > a > svg:first-child,
+.rider-agreement-contact__details > a > svg:last-child {
+  color: var(--color-yellow-500);
+}
+
+.rider-agreement-contact__details a > span {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.rider-agreement-contact__details small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.64rem;
+}
+
+.rider-agreement-contact__details strong {
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+/* =========================================================
+   END
+   ========================================================= */
+
+.rider-agreement-end {
+  padding-block: 2.5rem;
+  background-color: #ffffff;
+}
+
+.rider-agreement-end__layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(13, 47, 87, 0.16);
+}
+
+.rider-agreement-end__layout > div {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.rider-agreement-end__layout > div > span {
+  color: var(--color-navy-900);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.rider-agreement-end p {
+  margin: 0;
+  color: var(--color-navy-700);
+  font-size: 0.7rem;
+}
+
+.rider-agreement-end a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--color-navy-900);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.rider-agreement-end a svg {
+  color: var(--color-yellow-600, #c99700);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .rider-agreement-hero__layout,
+  .rider-agreement-section__layout,
+  .rider-agreement-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .rider-agreement-hero__panel {
+    max-width: 43rem;
+  }
+
+  .rider-agreement-section__header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    gap: 1rem;
+    padding-bottom: 1.7rem;
+    border-bottom: 1px solid rgba(13, 47, 87, 0.15);
+  }
+
+  .rider-agreement-section--dark
+    .rider-agreement-section__header {
+    border-bottom-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .rider-agreement-section__number,
+  .rider-agreement-section__icon {
+    margin: 0;
+  }
+
+  .rider-agreement-section__header h2 {
+    max-width: none;
+  }
+
+  .rider-agreement-contents__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .rider-agreement-intro__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .rider-agreement-tiers,
+  .rider-agreement-emergency {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .rider-agreement-hero,
+  .rider-agreement-section {
+    padding-block: 4rem;
+  }
+
+  .rider-agreement-hero h1 {
+    font-size: clamp(3rem, 13vw, 4.3rem);
+  }
+
+  .rider-agreement-hero__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .rider-agreement-contents__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rider-agreement-contents__grid,
+  .rider-agreement-responsibility-grid,
+  .rider-agreement-delivery-list,
+  .rider-agreement-unassign,
+  .rider-agreement-earnings,
+  .rider-agreement-payout {
+    grid-template-columns: 1fr;
+  }
+
+  .rider-agreement-section__header {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .rider-agreement-section__number {
+    grid-column: 1 / -1;
+  }
+
+  .rider-agreement-section__header h2 {
+    font-size: 2.15rem;
+  }
+
+  .rider-agreement-contact__details strong {
+    font-size: 0.78rem;
+  }
+
+  .rider-agreement-end__layout {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .rider-agreement-hero__panel {
+    padding: 1.5rem;
+  }
+
+  .rider-agreement-section__header {
+    grid-template-columns: 1fr;
+  }
+
+  .rider-agreement-checklist > div,
+  .rider-agreement-conduct > div,
+  .rider-agreement-suspension-list > div {
+    grid-template-columns: 2rem minmax(0, 1fr);
+    padding-block: 1rem;
+  }
+
+  .rider-agreement-checklist svg,
+  .rider-agreement-conduct svg,
+  .rider-agreement-suspension-list svg {
+    display: none;
+  }
+
+  .rider-agreement-contact__details a {
+    grid-template-columns: 2rem minmax(0, 1fr);
+  }
+
+  .rider-agreement-contact__details > a > svg:last-child {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rider-agreement-page {
+    scroll-behavior: auto;
+  }
+
+  .rider-agreement-contents__grid a,
+  .rider-agreement-contact__details a {
+    transition: none;
+  }
+}

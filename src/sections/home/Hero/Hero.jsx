@@ -28,7 +28,7 @@ function Hero() {
           </p>
 
           <div className="hero__actions">
-            <Link to="/track" className="hero__primary-action">
+            <Link to="/get-my-parcel" className="hero__primary-action">
               <span>Get my parcel</span>
               <FiArrowUpRight aria-hidden="true" />
             </Link>

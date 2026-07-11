@@ -3,6 +3,18 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
+import HowItWorks from "./pages/HowItWorks/HowItWorks";
+import About from "./pages/About/About";
+import PartnerWithUs from "./pages/PartnerWithUs/PartnerWithUs";
+import GetParcel from "./pages/GetMyParcel/GetMyParcel";
+import BecomeRelayer from "./pages/BecomeRelayer/BecomeRelayer";
+import Contact from "./pages/Contact/Contact";
+import HelpCentre from "./pages/HelpCenter/HelpCenter";
+import ParcelSafety from "./pages/ParcelSafety/ParcelSafety";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService/TermsOfService";
+import RiderAgreement from "./pages/RiderAgreement/RiderAgreement";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function PagePlaceholder({ title }) {
   return (
@@ -29,39 +41,34 @@ function App() {
   return (
     <div className="page-shell">
       <Navbar />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route
-          path="/how-it-works"
-          element={<PagePlaceholder title="How Relay Works" />}
-        />
+        <Route path="/how-it-works" element={<HowItWorks />} />
 
-        <Route
-          path="/track"
-          element={<PagePlaceholder title="Track Your Parcel" />}
-        />
+        <Route path="/get-my-parcel" element={<GetParcel />} />
 
-        <Route
-          path="/become-a-relayer"
-          element={<PagePlaceholder title="Become a Relayer" />}
-        />
+        <Route path="/become-a-relayer" element={<BecomeRelayer />} />
 
-        <Route
-          path="/partner-with-us"
-          element={<PagePlaceholder title="Partner With Relay" />}
-        />
+        <Route path="/partner-with-us" element={<PartnerWithUs />} />
 
-        <Route
-          path="/about"
-          element={<PagePlaceholder title="About Relay" />}
-        />
+        <Route path="/about" element={<About />} />
 
-        <Route
-          path="*"
-          element={<PagePlaceholder title="Page Not Found" />}
-        />
+        <Route path="/contact" element={<Contact />} />
+
+        <Route path="/help" element={<HelpCentre />} />
+
+        <Route path="/parcel-safety" element={<ParcelSafety />} />
+
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+
+        <Route path="/terms" element={<TermsOfService />} />
+
+        <Route path="/rider-agreement" element={<RiderAgreement />} />
+
+        <Route path="*" element={<PagePlaceholder title="Page Not Found" />} />
       </Routes>
 
       <Footer />

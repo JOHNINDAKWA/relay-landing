@@ -23,7 +23,7 @@ const audiences = [
     description:
       "Relay collects your parcel from a supported bus station and delivers it to your home, office or preferred address.",
     action: "Get my parcel",
-    path: "/track",
+    path: "/get-my-parcel",
     icon: FiPackage,
     image: audience_one,
     imageAlt: "Customer receiving a delivered parcel",

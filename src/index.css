@@ -20,6 +20,7 @@
   --color-navy-800: #0d2f57;
   --color-navy-700: #16416f;
 
+  --color-yellow-600: #dba800;
   --color-yellow-500: #ffc400;
   --color-yellow-400: #ffd23f;
   --color-yellow-100: #fff5c2;
@@ -70,7 +71,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   scroll-padding-top: 5rem;
 }
 
