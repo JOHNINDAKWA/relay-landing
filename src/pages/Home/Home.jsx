@@ -1,43 +1,29 @@
 import AudienceSelector from "../../sections/home/AudienceSelector/AudienceSelector";
 import Hero from "../../sections/home/Hero/Hero";
-import RelayJourney from "../../sections/home/RelayJourney/RelayJourney";
-import WhyRelay from "../../sections/home/WhyRelay/WhyRelay";
 import ProductExperiencePreview from "../../sections/home/ProductExperiencePreview/ProductExperiencePreview";
+import RelayJourney from "../../sections/home/RelayJourney/RelayJourney";
+import SupportedAreas from "../../sections/home/SupportedAreas/SupportedAreas";
+import SupportedPartners from "../../sections/home/SupportedPartners/SupportedPartners";
+import WhyRelay from "../../sections/home/WhyRelay/WhyRelay";
 
 import "./Home.css";
-import PartnerRiderCTA from "../../sections/home/PartnerRiderCTA/PartnerRiderCTA";
-import SupportedAreas from "../../sections/home/SupportedAreas/SupportedAreas";
 
 function Home() {
   return (
     <main className="home-page">
       <Hero />
-         <SupportedAreas />
 
-      {/* <JourneyOptions /> */}
+      <SupportedAreas />
+
       <AudienceSelector />
+
       <WhyRelay />
-        <RelayJourney />
-        <ProductExperiencePreview />
-        <PartnerRiderCTA/>
 
+      <RelayJourney />
 
+      <ProductExperiencePreview />
 
-
-      {/*
-        Future homepage sections:
-
-        <TrustStrip />
-        <TrackingPreview />
-        <Coverage />
-        <OperatingProof />
-        <CustomerStory />
-        <Partnerships />
-        <RelayerCTA />
-        <Safety />
-        <FAQ />
-        <FinalCTA />
-      */}
+      <SupportedPartners />
     </main>
   );
 }

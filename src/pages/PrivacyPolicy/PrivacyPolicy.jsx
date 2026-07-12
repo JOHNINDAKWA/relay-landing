@@ -812,7 +812,7 @@ function PrivacyPolicy() {
 
                 <span>
                   <small>Privacy</small>
-                  <strong>privacy@relay.co.ke</strong>
+                  <strong>support@relay.co.ke</strong>
                 </span>
 
                 <FiArrowUpRight aria-hidden="true" />
