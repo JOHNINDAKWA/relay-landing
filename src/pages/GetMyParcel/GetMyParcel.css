@@ -14,35 +14,7 @@
   background-color: #f4f2ec;
 }
 
-.get-parcel-hero::before {
-  position: absolute;
-  top: -13rem;
-  right: -10rem;
-  width: 34rem;
-  height: 34rem;
-  background: radial-gradient(
-    circle,
-    rgba(255, 196, 0, 0.18),
-    transparent 70%
-  );
-  content: "";
-  pointer-events: none;
-}
 
-.get-parcel-hero::after {
-  position: absolute;
-  bottom: -17rem;
-  left: -12rem;
-  width: 36rem;
-  height: 36rem;
-  background: radial-gradient(
-    circle,
-    rgba(13, 47, 87, 0.07),
-    transparent 70%
-  );
-  content: "";
-  pointer-events: none;
-}
 
 .get-parcel-hero__layout {
   position: relative;

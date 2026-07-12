@@ -142,9 +142,8 @@
 }
 
 .hero__secondary-action {
-  border: 1px solid rgba(13, 47, 87, 0.2);
-  background-color: rgba(255, 255, 255, 0.88);
-  color: var(--color-navy-900);
+  background-color: var(--color-navy-900);
+  color: var(--color-white);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -167,14 +166,14 @@
 }
 
 .hero__secondary-action:hover {
-  border-color: var(--color-navy-900);
-  background-color: var(--color-navy-900);
-  color: var(--color-white);
+  border-color: var(--color-yellow-500);
+  background-color: var(--color-yellow-500);
+  color: var(--color-navy-950);
   transform: translateY(-3px);
 }
 
 .hero__secondary-action:hover svg {
-  color: var(--color-yellow-500);
+  color: var(--color-navy-950);
   transform: translateX(3px);
 }
 

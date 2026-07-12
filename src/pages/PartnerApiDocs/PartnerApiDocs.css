@@ -15,18 +15,6 @@
   background-color: var(--color-navy-950);
 }
 
-.api-docs__hero::before {
-  position: absolute;
-  top: -16rem;
-  right: -13rem;
-  width: 35rem;
-  height: 35rem;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: 50%;
-  content: "";
-  pointer-events: none;
-}
-
 .api-docs__hero-layout {
   position: relative;
   z-index: 1;

@@ -5,21 +5,6 @@
   background-color: var(--color-white);
 }
 
-.why-relay::before {
-  position: absolute;
-  top: -10rem;
-  right: -9rem;
-  width: 26rem;
-  height: 26rem;
-  background: radial-gradient(
-    circle,
-    rgba(255, 196, 0, 0.1),
-    transparent 70%
-  );
-  content: "";
-  pointer-events: none;
-}
-
 .why-relay__layout {
   position: relative;
   z-index: 1;
