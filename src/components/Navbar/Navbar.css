@@ -523,8 +523,10 @@
 
 
 
-.navbar__logo-picture {
-  display: block;
+.navbar__brand {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
   line-height: 0;
 }
 
@@ -533,6 +535,8 @@
   width: auto;
   height: 2.6rem;
   object-fit: contain;
+  filter: none;
+  opacity: 1;
 }
 
 @media (max-width: 760px) {

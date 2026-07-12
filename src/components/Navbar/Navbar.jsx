@@ -109,25 +109,18 @@ function Navbar() {
         .join(" ")}
     >
       <div className="site-container navbar__inner">
-        <Link
-          to="/"
-          className="navbar__brand"
-          onClick={closeMenu}
-          aria-label="Relay homepage"
-        >
-          <picture className="navbar__logo-picture">
-            <source
-              media="(max-width: 760px)"
-              srcSet="/relay-logo.png"
-            />
-
-            <img
-              src="/logo.png"
-              alt="Relay"
-              className="navbar__logo"
-            />
-          </picture>
-        </Link>
+     <Link
+  to="/"
+  className="navbar__brand"
+  onClick={closeMenu}
+  aria-label="Relay homepage"
+>
+  <img
+    src={menuOpen ? "/relay-logo.png" : "/logo.png"}
+    alt="Relay"
+    className="navbar__logo"
+  />
+</Link>
 
         <nav
           id="main-navigation"
