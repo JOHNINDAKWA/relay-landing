@@ -221,17 +221,7 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.partner-hero__visual-note p span::after {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 0.4rem;
-  height: 0.4rem;
-  background-color: var(--color-yellow-500);
-  border-radius: 50%;
-  content: "";
-  transform: translateY(-50%);
-}
+
 
 /* =========================================================
    BENEFITS

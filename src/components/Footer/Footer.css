@@ -420,7 +420,7 @@
 
   .footer__store-badges {
     align-items: flex-start;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .footer__store-badges img {

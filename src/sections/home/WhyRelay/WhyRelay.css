@@ -281,7 +281,7 @@
   }
 
   .why-relay__image-note {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr auto;
   }
 
   .why-relay__journey-line {

@@ -840,6 +840,8 @@
 
   .relayer-hero__visual {
     min-height: 31rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .relayer-hero__image {

@@ -453,7 +453,7 @@
   }
 
   .product-preview__floating-note {
-    position: static;
+    /* position: static; */
     min-height: 2.6rem;
     margin-top: 0.7rem;
     padding: 0.65rem 0.85rem;
@@ -465,6 +465,7 @@
 
   .product-preview__floating-note--right {
     order: 3;
+    bottom: 2rem !important;
   }
 
   .product-preview__feature {

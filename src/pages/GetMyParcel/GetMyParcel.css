@@ -759,7 +759,7 @@
   }
 
   .get-parcel-hero__note {
-    position: static;
+    /* position: static; */
     margin-top: 0.7rem;
   }
 
