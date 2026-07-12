@@ -115,11 +115,18 @@ function Navbar() {
           onClick={closeMenu}
           aria-label="Relay homepage"
         >
-          <img
-            src="/logo.png"
-            alt="Relay"
-            className="navbar__logo"
-          />
+          <picture className="navbar__logo-picture">
+            <source
+              media="(max-width: 760px)"
+              srcSet="/relay-logo.png"
+            />
+
+            <img
+              src="/logo.png"
+              alt="Relay"
+              className="navbar__logo"
+            />
+          </picture>
         </Link>
 
         <nav
@@ -132,7 +139,7 @@ function Navbar() {
             .join(" ")}
           aria-label="Main navigation"
         >
-            <ul className="navbar__links">
+          <ul className="navbar__links">
             {navigationItems.map((item, index) => (
               <li key={item.path}>
                 <NavLink
@@ -191,12 +198,18 @@ function Navbar() {
         </nav>
 
         <div className="navbar__actions">
-          <Link to="/get-my-parcel" className="navbar__track-link">
+          <Link
+            to="/get-my-parcel"
+            className="navbar__track-link"
+          >
             <FiPackage aria-hidden="true" />
             <span>Get my parcel</span>
           </Link>
 
-          <Link to="/get-my-parcel" className="navbar__cta">
+          <Link
+            to="/get-my-parcel"
+            className="navbar__cta"
+          >
             <span>Get Started</span>
             <FiArrowUpRight aria-hidden="true" />
           </Link>
