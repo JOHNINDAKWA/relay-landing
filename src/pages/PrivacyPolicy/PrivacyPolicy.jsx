@@ -408,8 +408,8 @@ function PrivacyPolicy() {
 
             <div>
               <span>Privacy enquiries</span>
-              <a href="mailto:privacy@relay.co.ke">
-                privacy@relay.co.ke
+              <a href="mailto:info@relay.co.ke">
+                info@relay.co.ke
               </a>
             </div>
           </div>
@@ -670,8 +670,8 @@ function PrivacyPolicy() {
 
             <div>
               <span>Request account deletion</span>
-              <a href="mailto:privacy@relay.co.ke">
-                privacy@relay.co.ke
+              <a href="mailto:info@relay.co.ke">
+                info@relay.co.ke
               </a>
             </div>
           </div>
@@ -730,8 +730,8 @@ function PrivacyPolicy() {
 
             <p>
               To exercise a privacy right, email{" "}
-              <a href="mailto:privacy@relay.co.ke">
-                privacy@relay.co.ke
+              <a href="mailto:info@relay.co.ke">
+                info@relay.co.ke
               </a>
               . Relay aims to respond to valid requests within 30 days.
             </p>
@@ -754,8 +754,8 @@ function PrivacyPolicy() {
 
             <p>
               Contact{" "}
-              <a href="mailto:privacy@relay.co.ke">
-                privacy@relay.co.ke
+              <a href="mailto:info@relay.co.ke">
+                info@relay.co.ke
               </a>{" "}
               if you believe a child has provided personal information to
               Relay. We will review the report and delete the information
@@ -807,7 +807,7 @@ function PrivacyPolicy() {
             </div>
 
             <div className="privacy-contact__details">
-              <a href="mailto:privacy@relay.co.ke">
+              <a href="mailto:info@relay.co.ke">
                 <FiShield aria-hidden="true" />
 
                 <span>
