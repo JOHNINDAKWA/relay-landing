@@ -46,7 +46,7 @@ const audiences = [
     label: "For transport operators",
     title: "Become our partner",
     description:
-      "Bus companies, SACCOs and parcel offices can work with Relay to offer customers convenient doorstep delivery.",
+      "Bus companies, supported businesses and parcel offices can work with Relay to offer customers convenient doorstep delivery.",
     action: "Partner with us",
     path: "/partner-with-us",
     icon: FiUsers,

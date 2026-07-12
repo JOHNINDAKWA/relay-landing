@@ -62,7 +62,7 @@ function PartnerWithUs() {
             </h1>
 
             <p>
-              Relay works with bus companies, SACCOs and parcel offices to
+              Relay works with bus companies, supported businesses, retailers and parcel offices to
               deliver parcels from the station directly to customers.
             </p>
 
@@ -174,7 +174,7 @@ function PartnerWithUs() {
                 <FiCheck aria-hidden="true" />
 
                 <span>
-                  Suitable for bus companies, SACCOs and parcel offices
+                  Suitable for bus companies, supported businesses, retailers and parcel offices
                 </span>
               </div>
 
@@ -307,7 +307,7 @@ function PartnerWithUs() {
 
                   <div className="partner-form__field">
                     <label htmlFor="company-name">
-                      Company or SACCO
+                      Company or organization name
                       <span>*</span>
                     </label>
 

@@ -41,7 +41,7 @@ function PartnerRiderCTA() {
               <h3>Become a Relay partner</h3>
 
               <p>
-                Bus companies, SACCOs and parcel offices can offer customers
+                Supported Businesses, retailers and bus terminals can offer customers
                 reliable doorstep delivery through Relay.
               </p>
 
