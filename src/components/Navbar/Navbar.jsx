@@ -132,13 +132,7 @@ function Navbar() {
             .join(" ")}
           aria-label="Main navigation"
         >
-          <div className="navbar__mobile-heading">
-            <span>Explore Relay</span>
-
-            <span className="navbar__mobile-heading-line" />
-          </div>
-
-          <ul className="navbar__links">
+            <ul className="navbar__links">
             {navigationItems.map((item, index) => (
               <li key={item.path}>
                 <NavLink
