@@ -36,7 +36,7 @@ function About() {
       <section className="about-hero">
         <img
           src={aboutHeroImage}
-          alt="Relay riders preparing to deliver parcels"
+          alt="Relay riders transporting parcels for delivery"
           className="about-hero__image"
         />
 
@@ -50,12 +50,13 @@ function About() {
 
             <h1>
               We complete the journey{" "}
-              <span>from station to doorstep.</span>
+              <span>from pickup point to doorstep.</span>
             </h1>
 
             <p>
-              Relay helps customers receive parcels from supported bus
-              stations without travelling to collect them in person.
+              Relay helps customers receive parcels from supported businesses,
+              retailers, transport partners and other pickup locations without
+              travelling to collect them in person.
             </p>
 
             <Link to="/how-it-works" className="about-hero__action">
@@ -74,19 +75,20 @@ function About() {
 
           <div className="about-introduction__content">
             <h2>
-              Bus companies move parcels between towns.
-              <span>Relay handles the final journey.</span>
+              Businesses and transport partners prepare the parcel.
+              <span>Relay handles the delivery journey.</span>
             </h2>
 
             <div className="about-introduction__copy">
               <p>
-                We collect parcels from supported bus stations and deliver them
-                to homes, offices and other preferred locations across Nairobi.
+                We collect parcels from supported pickup locations and deliver
+                them to homes, offices and other preferred addresses within our
+                service areas.
               </p>
 
               <p>
                 Customers can request delivery, pay through M-Pesa and follow
-                the parcel until it reaches them.
+                their parcel until it reaches them.
               </p>
             </div>
           </div>
@@ -98,7 +100,7 @@ function About() {
           <div className="about-purpose__image-wrap">
             <img
               src={parcelArrivalImage}
-              alt="Parcels being received at a bus station"
+              alt="Parcel ready for collection at a supported pickup location"
               className="about-purpose__image"
             />
 
@@ -111,7 +113,7 @@ function About() {
               <FiMapPin aria-hidden="true" />
 
               <span>
-                Parcel arrives at the station
+                Parcel ready at the pickup point
               </span>
             </div>
           </div>
@@ -122,19 +124,19 @@ function About() {
             </span>
 
             <h2>
-              Reaching the station should not be the end of the journey.
+              Reaching the pickup point should not be the end of the journey.
             </h2>
 
             <p>
               Traffic, queues and distance can make parcel collection
-              inconvenient. Relay removes that final trip by bringing the
-              parcel directly to the customer.
+              inconvenient. Relay removes that final trip by collecting the
+              parcel and bringing it directly to the customer.
             </p>
 
             <ul className="about-purpose__benefits">
               <li>
                 <FiCheckCircle aria-hidden="true" />
-                <span>No unnecessary trip to the station</span>
+                <span>No unnecessary trip to the pickup point</span>
               </li>
 
               <li>
@@ -144,7 +146,7 @@ function About() {
 
               <li>
                 <FiCheckCircle aria-hidden="true" />
-                <span>Delivery to a preferred address</span>
+                <span>Delivery to your preferred address</span>
               </li>
             </ul>
 

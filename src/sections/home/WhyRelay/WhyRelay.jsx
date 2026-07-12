@@ -10,11 +10,10 @@ import "./WhyRelay.css";
 
 import relay_delivery from "../../../assets/percel-delivery.png";
 
-
 const benefits = [
   {
     icon: FiMapPin,
-    text: "No trip to the bus station",
+    text: "No trip to the pickup location",
   },
   {
     icon: FiNavigation,
@@ -33,15 +32,21 @@ function WhyRelay() {
         <div className="why-relay__image">
           <img
             src={relay_delivery}
-            alt="Busy bus station where parcels are collected"
+            alt="Relay rider delivering a parcel to a customer"
           />
 
-          <div className="why-relay__image-overlay" aria-hidden="true" />
+          <div
+            className="why-relay__image-overlay"
+            aria-hidden="true"
+          />
 
           <div className="why-relay__image-note">
-            <span>From station</span>
+            <span>From pickup point</span>
 
-            <div className="why-relay__journey-line" aria-hidden="true">
+            <div
+              className="why-relay__journey-line"
+              aria-hidden="true"
+            >
               <span />
             </div>
 
@@ -55,13 +60,14 @@ function WhyRelay() {
           </span>
 
           <h2>
-            Your parcel is at the station.
+            Your parcel is ready.
             <span>We bring it to you.</span>
           </h2>
 
           <p>
-            Relay saves you the trip, the traffic and the queues by collecting
-            your parcel and delivering it to your preferred address.
+            Relay collects parcels from supported businesses, retailers and
+            transport partners, then delivers them safely to your preferred
+            address.
           </p>
 
           <ul className="why-relay__benefits">
@@ -73,7 +79,10 @@ function WhyRelay() {
             ))}
           </ul>
 
-          <Link to="/how-it-works" className="why-relay__action">
+          <Link
+            to="/how-it-works"
+            className="why-relay__action"
+          >
             <span>See how it works</span>
             <FiArrowUpRight aria-hidden="true" />
           </Link>

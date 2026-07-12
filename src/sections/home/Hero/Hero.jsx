@@ -1,8 +1,29 @@
 import { Link } from "react-router-dom";
-import { FiArrowUpRight, FiArrowRight } from "react-icons/fi";
+import {
+  FiArrowRight,
+  FiArrowUpRight,
+  FiMapPin,
+  FiPackage,
+  FiTruck,
+} from "react-icons/fi";
 
 import heroImage from "../../../assets/hero.png";
 import "./Hero.css";
+
+const servicePoints = [
+  {
+    icon: FiTruck,
+    label: "Business pickups",
+  },
+  {
+    icon: FiPackage,
+    label: "Terminal collections",
+  },
+  {
+    icon: FiMapPin,
+    label: "Doorstep delivery",
+  },
+];
 
 function Hero() {
   return (
@@ -14,17 +35,32 @@ function Hero() {
     >
       <div className="hero__overlay" aria-hidden="true" />
 
+      <div
+        className="hero__decoration hero__decoration--one"
+        aria-hidden="true"
+      />
+
+      <div
+        className="hero__decoration hero__decoration--two"
+        aria-hidden="true"
+      />
+
       <div className="site-container hero__container">
         <div className="hero__content">
+          <span className="hero__eyebrow">
+            <FiTruck aria-hidden="true" />
+            Last-mile delivery made easier
+          </span>
+
           <h1 className="hero__title">
-            From the bus station
-            <span>to your <br /> doorstep.</span>
+            From businesses & terminals
+            <span>to your doorstep.</span>
           </h1>
 
           <p className="hero__description">
-            Relay collects your parcel from a supported bus station and
-            delivers it across Nairobi with M-Pesa payment, live tracking and
-            proof of delivery.
+            Relay collects parcels from supported businesses, retailers and
+            bus terminals, then delivers them safely to customers with secure
+            payments, live tracking and proof of delivery.
           </p>
 
           <div className="hero__actions">
@@ -34,12 +70,24 @@ function Hero() {
             </Link>
 
             <Link
-              to="/how-it-works"
+              to="/partner-with-us"
               className="hero__secondary-action"
             >
-              <span>See how Relay works</span>
+              <span>Send parcels with Relay</span>
               <FiArrowRight aria-hidden="true" />
             </Link>
+          </div>
+
+          <div className="hero__service-points">
+            {servicePoints.map(({ icon: Icon, label }) => (
+              <div key={label}>
+                <span>
+                  <Icon aria-hidden="true" />
+                </span>
+
+                <p>{label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

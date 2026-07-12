@@ -13,23 +13,27 @@ import "./RelayJourney.css";
 const journeySteps = [
   {
     icon: FiPackage,
-    title: "Parcel arrives",
-    description: "Your parcel is received at a supported bus station.",
+    title: "Parcel is ready",
+    description:
+      "Your parcel is prepared for collection at a supported business, retailer or transport partner.",
   },
   {
     icon: FiCheckCircle,
     title: "Request delivery",
-    description: "Confirm your parcel and choose your delivery address.",
+    description:
+      "Confirm the parcel details and select your preferred delivery address.",
   },
   {
     icon: FiTruck,
-    title: "Rider collects it",
-    description: "A verified Relayer picks it up from the station.",
+    title: "Relayer collects it",
+    description:
+      "A verified Relayer collects the parcel from the confirmed pickup location.",
   },
   {
     icon: FiMapPin,
     title: "Delivered to you",
-    description: "Track the rider and receive your parcel at your door.",
+    description:
+      "Track the delivery and receive your parcel safely at your chosen address.",
   },
 ];
 
@@ -42,20 +46,21 @@ function RelayJourney() {
             How Relay works
           </span>
 
-          <h2>
-            From the station to your doorstep
-          </h2>
+          <h2>From pickup point to your doorstep</h2>
 
           <p>
-            Request delivery, follow your parcel and receive it wherever you
-            are.
+            Request delivery, follow your parcel and receive it at your
+            preferred address.
           </p>
         </header>
 
         <div className="relay-journey__steps">
           {journeySteps.map(
             ({ icon: Icon, title, description }, index) => (
-              <div className="relay-journey__step-group" key={title}>
+              <div
+                className="relay-journey__step-group"
+                key={title}
+              >
                 <article className="relay-journey__step">
                   <span className="relay-journey__icon">
                     <Icon aria-hidden="true" />
@@ -77,6 +82,27 @@ function RelayJourney() {
               </div>
             ),
           )}
+        </div>
+
+        <div className="relay-journey__safety">
+          <div className="relay-journey__safety-content">
+            <span>Parcel safety</span>
+
+            <h3>Know what to check before every handover.</h3>
+
+            <p>
+              Learn how to verify your Relayer, protect your account and report
+              a damaged, missing or suspicious parcel.
+            </p>
+          </div>
+
+          <Link
+            to="/parcel-safety"
+            className="relay-journey__safety-link"
+          >
+            View parcel safety guide
+            <FiArrowUpRight aria-hidden="true" />
+          </Link>
         </div>
       </div>
 
@@ -101,8 +127,8 @@ function RelayJourney() {
             </h2>
 
             <p>
-              Get delivery updates and follow your parcel from the station to
-              your door.
+              Receive delivery updates and follow your parcel from collection
+              to final handover.
             </p>
           </div>
 

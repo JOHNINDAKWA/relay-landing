@@ -15,6 +15,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService/TermsOfService";
 import RiderAgreement from "./pages/RiderAgreement/RiderAgreement";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import PartnerApiDocs from "./pages/PartnerApiDocs/PartnerApiDocs";
 
 function PagePlaceholder({ title }) {
   return (
@@ -67,6 +68,8 @@ function App() {
         <Route path="/terms" element={<TermsOfService />} />
 
         <Route path="/rider-agreement" element={<RiderAgreement />} />
+
+        <Route path="/developers/partner-api" element={<PartnerApiDocs />} />
 
         <Route path="*" element={<PagePlaceholder title="Page Not Found" />} />
       </Routes>

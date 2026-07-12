@@ -250,13 +250,13 @@
 }
 
 .product-preview__floating-note--left {
-  top: 9rem;
-  left: -1.4rem;
+  top: 10rem;
+  left: -2.4rem;
 }
 
 .product-preview__floating-note--right {
-  right: -1.4rem;
-  bottom: 9rem;
+  right: -2.4rem;
+  bottom: 6rem;
 }
 
 /* Bottom actions */

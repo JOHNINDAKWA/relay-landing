@@ -16,19 +16,19 @@ const leftFeatures = [
     icon: FiMapPin,
     title: "Track in real time",
     description:
-      "Follow your parcel from the station to your doorstep.",
+      "Follow your parcel from the pickup location to your delivery address.",
   },
   {
     icon: FiCheckCircle,
     title: "Simple delivery flow",
     description:
-      "Request delivery in a few steps without confusion.",
+      "Request a parcel delivery in a few clear and easy steps.",
   },
   {
     icon: FiNavigation,
     title: "Clear status updates",
     description:
-      "Always know where your parcel is and what happens next.",
+      "Know when your parcel is collected, in transit and delivered.",
   },
 ];
 
@@ -37,19 +37,19 @@ const rightFeatures = [
     icon: FiSmartphone,
     title: "Made for mobile",
     description:
-      "Designed for quick actions, visibility and ease of use.",
+      "Designed for quick requests, easy tracking and convenient delivery.",
   },
   {
     icon: FiShield,
     title: "Safe and reliable",
     description:
-      "Built around verified riders, proof of delivery and trust.",
+      "Built around verified Relayers, secure handovers and proof of delivery.",
   },
   {
     icon: FiCheckCircle,
-    title: "All in one place",
+    title: "Everything in one place",
     description:
-      "Request, pay and track from a single product experience.",
+      "Request, pay and track your parcel through one simple experience.",
   },
 ];
 
@@ -65,8 +65,8 @@ function ProductExperiencePreview() {
           <h2>Designed to feel simple from the first tap.</h2>
 
           <p>
-            A clean mobile experience for requesting delivery, tracking
-            progress and receiving your parcel with confidence.
+            A convenient mobile experience for requesting parcel delivery,
+            following its progress and receiving it with confidence.
           </p>
         </header>
 
@@ -92,7 +92,7 @@ function ProductExperiencePreview() {
             <div className="product-preview__phone-wrap">
               <img
                 src={phoneImage}
-                alt="Relay parcel tracking app displayed on a phone"
+                alt="Relay parcel delivery and tracking app displayed on a phone"
                 className="product-preview__phone-image"
               />
             </div>
@@ -123,7 +123,10 @@ function ProductExperiencePreview() {
         </div>
 
         <div className="product-preview__actions">
-          <Link to="/get-my-parcel" className="product-preview__primary-action">
+          <Link
+            to="/get-my-parcel"
+            className="product-preview__primary-action"
+          >
             Get My Parcel
             <FiArrowUpRight aria-hidden="true" />
           </Link>

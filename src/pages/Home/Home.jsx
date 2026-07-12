@@ -6,11 +6,15 @@ import ProductExperiencePreview from "../../sections/home/ProductExperiencePrevi
 
 import "./Home.css";
 import PartnerRiderCTA from "../../sections/home/PartnerRiderCTA/PartnerRiderCTA";
+import SupportedAreas from "../../sections/home/SupportedAreas/SupportedAreas";
 
 function Home() {
   return (
     <main className="home-page">
       <Hero />
+         <SupportedAreas />
+
+      {/* <JourneyOptions /> */}
       <AudienceSelector />
       <WhyRelay />
         <RelayJourney />

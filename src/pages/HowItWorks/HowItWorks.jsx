@@ -21,43 +21,44 @@ import Parcel_Arrival from "../../assets/parcel-arrival.jpeg";
 import Parcel_Collection from "../../assets/parcel-collection.jpeg";
 import Parcel_FollowUp from "../../assets/parcel-follow-up.jpeg";
 import Parcel_Customer_Receiving from "../../assets/parcel-customer.jpeg";
+
 import "./HowItWorks.css";
 import BeforeDelivery from "./BeforeDelivery";
 
 const processSteps = [
   {
     number: "01",
-    shortTitle: "Parcel arrives",
-    title: "Your parcel reaches a supported bus station.",
+    shortTitle: "Parcel is ready",
+    title: "Your parcel is ready at a supported pickup location.",
     description:
-      "The station agent records the parcel and confirms that it is ready for collection by Relay.",
-    detail: "Parcel received and recorded",
+      "The business, retailer or transport partner confirms that your parcel is available for collection by Relay.",
+    detail: "Parcel confirmed and ready",
     icon: FiPackage,
   },
   {
     number: "02",
     shortTitle: "Request delivery",
-    title: "You tell Relay where to deliver it.",
+    title: "Tell Relay where you would like it delivered.",
     description:
-      "Confirm your parcel, enter your preferred address and pay securely through M-Pesa.",
+      "Confirm your parcel details, enter your preferred delivery address and pay securely through M-Pesa.",
     detail: "Address and payment confirmed",
     icon: FiSmartphone,
   },
   {
     number: "03",
-    shortTitle: "Rider collects it",
+    shortTitle: "Relayer collects it",
     title: "A verified Relayer collects your parcel.",
     description:
-      "The assigned rider confirms the station handover before beginning the final delivery journey.",
-    detail: "Secure station handover",
+      "The assigned Relayer confirms the handover at the pickup location before beginning the delivery journey.",
+    detail: "Secure pickup handover",
     icon: FiTruck,
   },
   {
     number: "04",
     shortTitle: "Track and receive",
-    title: "Follow the journey until it reaches your door.",
+    title: "Follow the journey until your parcel reaches you.",
     description:
-      "See delivery updates, follow the rider and receive proof once your parcel has been delivered.",
+      "Receive delivery updates, follow the Relayer and get confirmation once your parcel has been delivered.",
     detail: "Live updates and proof of delivery",
     icon: FiMapPin,
   },
@@ -65,7 +66,7 @@ const processSteps = [
 
 const trackingUpdates = [
   {
-    label: "Parcel received at station",
+    label: "Parcel ready for collection",
     time: "09:18",
     complete: true,
   },
@@ -75,7 +76,7 @@ const trackingUpdates = [
     complete: true,
   },
   {
-    label: "Rider collected parcel",
+    label: "Relayer collected parcel",
     time: "09:41",
     complete: true,
   },
@@ -100,7 +101,7 @@ const trustPoints = [
   {
     icon: FiNavigation,
     title: "Live delivery updates",
-    text: "Customers can follow the parcel after it leaves the station.",
+    text: "Customers can follow their parcel after it leaves the pickup location.",
   },
   {
     icon: FiPhone,
@@ -120,25 +121,33 @@ function HowItWorks() {
 
         <div className="site-container hiw-hero__container">
           <div className="hiw-hero__content">
-            <span className="hiw-hero__eyebrow">How Relay works</span>
+            <span className="hiw-hero__eyebrow">
+              How Relay works
+            </span>
 
             <h1>
               The simple way to get your parcel
-              <span>{" "}from the station to your door.</span>
+              <span> from pickup point to your door.</span>
             </h1>
 
             <p>
-              Request delivery, pay through M-Pesa and follow your parcel
-              until it reaches your preferred address.
+              Request delivery, pay through M-Pesa and follow your parcel until
+              it reaches your preferred address.
             </p>
 
             <div className="hiw-hero__actions">
-              <Link to="/get-my-parcel" className="hiw-hero__primary">
+              <Link
+                to="/get-my-parcel"
+                className="hiw-hero__primary"
+              >
                 Get my parcel
                 <FiArrowUpRight aria-hidden="true" />
               </Link>
 
-              <a href="#relay-process" className="hiw-hero__secondary">
+              <a
+                href="#relay-process"
+                className="hiw-hero__secondary"
+              >
                 Follow the journey
                 <FiArrowDown aria-hidden="true" />
               </a>
@@ -160,7 +169,7 @@ function HowItWorks() {
 
             <div className="hiw-hero__route">
               <div>
-                <span>Station</span>
+                <span>Pickup point</span>
                 <strong>Machakos Country Bus</strong>
               </div>
 
@@ -196,31 +205,33 @@ function HowItWorks() {
             <h2>Four simple steps.</h2>
 
             <p>
-              Relay manages the final journey after your parcel arrives at the
-              bus station.
+              Relay manages the delivery journey from the supported pickup
+              location to your preferred address.
             </p>
           </header>
 
           <div className="hiw-overview__route">
-            {processSteps.map(({ number, shortTitle, icon: Icon }, index) => (
-              <div className="hiw-overview__group" key={number}>
-                <div className="hiw-overview__step">
-                  <span className="hiw-overview__icon">
-                    <Icon aria-hidden="true" />
-                  </span>
+            {processSteps.map(
+              ({ number, shortTitle, icon: Icon }, index) => (
+                <div className="hiw-overview__group" key={number}>
+                  <div className="hiw-overview__step">
+                    <span className="hiw-overview__icon">
+                      <Icon aria-hidden="true" />
+                    </span>
 
-                  <span>{number}</span>
-                  <strong>{shortTitle}</strong>
+                    <span>{number}</span>
+                    <strong>{shortTitle}</strong>
+                  </div>
+
+                  {index < processSteps.length - 1 && (
+                    <FiArrowRight
+                      className="hiw-overview__arrow"
+                      aria-hidden="true"
+                    />
+                  )}
                 </div>
-
-                {index < processSteps.length - 1 && (
-                  <FiArrowRight
-                    className="hiw-overview__arrow"
-                    aria-hidden="true"
-                  />
-                )}
-              </div>
-            ))}
+              ),
+            )}
           </div>
         </div>
       </section>
@@ -243,7 +254,9 @@ function HowItWorks() {
             ) => (
               <article
                 className={`hiw-process__row ${
-                  index % 2 !== 0 ? "hiw-process__row--reverse" : ""
+                  index % 2 !== 0
+                    ? "hiw-process__row--reverse"
+                    : ""
                 }`}
                 key={number}
               >
@@ -251,21 +264,21 @@ function HowItWorks() {
                   {index === 0 && (
                     <img
                       src={Parcel_Arrival}
-                      alt="Bus at a busy passenger and parcel station"
+                      alt="Parcel ready for collection at a supported pickup location"
                     />
                   )}
 
                   {index === 1 && (
                     <img
                       src={Parcel_FollowUp}
-                      alt="Customer using a mobile phone to arrange delivery"
+                      alt="Customer using a mobile phone to request parcel delivery"
                     />
                   )}
 
                   {index === 2 && (
                     <img
-                     src={Parcel_Collection}
-                      alt="Delivery rider preparing for a parcel journey"
+                      src={Parcel_Collection}
+                      alt="Relay delivery rider collecting a parcel"
                     />
                   )}
 
@@ -314,7 +327,10 @@ function HowItWorks() {
                   )}
 
                   {index === 3 && (
-                    <Link to="/get-my-parcel" className="hiw-process__link">
+                    <Link
+                      to="/get-my-parcel"
+                      className="hiw-process__link"
+                    >
                       Get My Parcel
                       <FiArrowUpRight aria-hidden="true" />
                     </Link>
@@ -341,40 +357,50 @@ function HowItWorks() {
             </h2>
 
             <p>
-              Relay shows when your parcel is recorded, collected, on the way
-              and successfully delivered.
+              Relay shows when your parcel is ready, collected, on the way and
+              successfully delivered.
             </p>
 
             <div className="hiw-tracking__updates">
-              {trackingUpdates.map(({ label, time, complete }) => (
-                <div
-                  className={`hiw-tracking__update ${
-                    complete ? "hiw-tracking__update--complete" : ""
-                  }`}
-                  key={label}
-                >
-                  <span className="hiw-tracking__marker">
-                    {complete ? (
-                      <FiCheck aria-hidden="true" />
-                    ) : (
-                      <i />
-                    )}
-                  </span>
+              {trackingUpdates.map(
+                ({ label, time, complete }) => (
+                  <div
+                    className={`hiw-tracking__update ${
+                      complete
+                        ? "hiw-tracking__update--complete"
+                        : ""
+                    }`}
+                    key={label}
+                  >
+                    <span className="hiw-tracking__marker">
+                      {complete ? (
+                        <FiCheck aria-hidden="true" />
+                      ) : (
+                        <i />
+                      )}
+                    </span>
 
-                  <strong>{label}</strong>
-                  <time>{time}</time>
-                </div>
-              ))}
+                    <strong>{label}</strong>
+                    <time>{time}</time>
+                  </div>
+                ),
+              )}
             </div>
 
-            <Link to="/get-my-parcel" className="hiw-tracking__action">
+            <Link
+              to="/get-my-parcel"
+              className="hiw-tracking__action"
+            >
               Get My Parcel
               <FiArrowUpRight aria-hidden="true" />
             </Link>
           </div>
 
           <div className="hiw-tracking__phone">
-            <div className="hiw-tracking__glow" aria-hidden="true" />
+            <div
+              className="hiw-tracking__glow"
+              aria-hidden="true"
+            />
 
             <img
               src={phoneImage}
@@ -399,22 +425,29 @@ function HowItWorks() {
           <header className="hiw-trust__header">
             <span>Built for safe delivery</span>
 
-            <h2>Every important handover is accounted for.</h2>
+            <h2>
+              Every important handover is accounted for.
+            </h2>
           </header>
 
           <div className="hiw-trust__list">
-            {trustPoints.map(({ icon: Icon, title, text }) => (
-              <article className="hiw-trust__item" key={title}>
-                <span className="hiw-trust__icon">
-                  <Icon aria-hidden="true" />
-                </span>
+            {trustPoints.map(
+              ({ icon: Icon, title, text }) => (
+                <article
+                  className="hiw-trust__item"
+                  key={title}
+                >
+                  <span className="hiw-trust__icon">
+                    <Icon aria-hidden="true" />
+                  </span>
 
-                <div>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </div>
-              </article>
-            ))}
+                  <div>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </div>
+                </article>
+              ),
+            )}
           </div>
         </div>
       </section>
@@ -430,8 +463,8 @@ function HowItWorks() {
             <span>Get started with Relay</span>
 
             <h2>
-              Your parcel has arrived.
-              <strong>Let us bring it home.</strong>
+              Your parcel is ready.
+              <strong>Let us bring it to you.</strong>
             </h2>
 
             <p>
@@ -473,7 +506,8 @@ function HowItWorks() {
           </div>
         </div>
       </section>
-      <BeforeDelivery/>
+
+      <BeforeDelivery />
     </main>
   );
 }

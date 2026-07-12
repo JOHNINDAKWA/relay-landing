@@ -68,7 +68,7 @@ function Footer() {
             </span>
 
             <p>
-              Let us complete the journey from the bus station to your
+              Let us complete the journey from the pickup location to your
               doorstep.
             </p>
           </div>

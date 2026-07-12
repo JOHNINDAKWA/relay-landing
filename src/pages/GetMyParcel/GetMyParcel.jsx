@@ -21,30 +21,30 @@ import "./GetMyParcel.css";
 const deliverySteps = [
   {
     icon: FiPackage,
-    title: "Your parcel arrives",
-    text: "Confirm that your parcel has reached a supported bus station.",
+    title: "Your parcel is ready",
+    text: "Confirm that your parcel is available at a supported pickup location.",
   },
   {
     icon: FiSmartphone,
     title: "Request delivery in the app",
-    text: "Download Relay, enter the parcel details and choose your address.",
+    text: "Download Relay, enter the parcel details and choose your delivery address.",
   },
   {
     icon: FiTruck,
     title: "Relay collects it",
-    text: "A verified Relayer picks up the parcel from the station.",
+    text: "A verified Relayer collects the parcel from the confirmed pickup location.",
   },
   {
     icon: FiMapPin,
     title: "Track and receive",
-    text: "Follow the delivery in the app until it reaches your door.",
+    text: "Follow the delivery in the app until your parcel reaches you.",
   },
 ];
 
 const appBenefits = [
-  "Request collection from a supported station",
+  "Request collection from a supported pickup location",
   "Pay securely through M-Pesa",
-  "Follow the rider in real time",
+  "Follow the Relayer in real time",
   "Receive delivery status updates",
 ];
 
@@ -61,14 +61,15 @@ function GetMyParcel() {
             </span>
 
             <h1>
-              Your parcel is at the station.
+              Your parcel is ready.
               <span>Relay brings it to you.</span>
             </h1>
 
             <p>
               Download the Relay app to request collection from a supported
-              bus station, pay through M-Pesa and follow the delivery until it
-              reaches your preferred address.
+              business, retailer, transport partner or other pickup location,
+              pay through M-Pesa and follow the delivery until it reaches your
+              preferred address.
             </p>
 
             <div className="get-parcel-hero__downloads">
@@ -120,7 +121,7 @@ function GetMyParcel() {
 
             <span className="get-parcel-hero__note get-parcel-hero__note--top">
               <FiCheckCircle aria-hidden="true" />
-              Parcel found
+              Parcel confirmed
             </span>
 
             <span className="get-parcel-hero__note get-parcel-hero__note--bottom">
@@ -141,11 +142,11 @@ function GetMyParcel() {
           <header className="get-parcel-process__header">
             <span>How to get your parcel</span>
 
-            <h2>From the station to your door in four steps.</h2>
+            <h2>From pickup point to your door in four steps.</h2>
 
             <p>
-              The request and live tracking happen inside the Relay mobile
-              app.
+              Request delivery, make payment and follow the journey through
+              the Relay mobile app.
             </p>
           </header>
 
@@ -182,7 +183,7 @@ function GetMyParcel() {
           <div className="get-parcel-collection__image">
             <img
               src={parcelPickupImage}
-              alt="Relay rider collecting a parcel"
+              alt="Relay rider collecting a parcel from a supported pickup location"
             />
 
             <div
@@ -192,29 +193,29 @@ function GetMyParcel() {
 
             <div className="get-parcel-collection__image-note">
               <FiPackage aria-hidden="true" />
-              <span>Secure station collection</span>
+              <span>Secure parcel collection</span>
             </div>
           </div>
 
           <div className="get-parcel-collection__content">
             <span className="get-parcel-collection__eyebrow">
-              Relay handles the final journey
+              Relay handles the delivery journey
             </span>
 
             <h2>
-              You do not need to travel to the bus station.
+              You do not need to travel to the pickup location.
             </h2>
 
             <p>
               Once your request is confirmed, a verified Relayer collects the
-              parcel from the station and delivers it to the address you
-              selected in the app.
+              parcel from the supported pickup location and delivers it to the
+              address you selected in the app.
             </p>
 
             <div className="get-parcel-collection__points">
               <div>
                 <FiCheck aria-hidden="true" />
-                <span>Recorded station handover</span>
+                <span>Recorded pickup handover</span>
               </div>
 
               <div>
@@ -254,8 +255,8 @@ function GetMyParcel() {
 
             <p>
               The Relay website explains the service. The mobile app is where
-              customers request parcel collection and receive live delivery
-              updates.
+              customers request parcel collection, make payment and receive
+              live delivery updates.
             </p>
 
             <div className="get-parcel-app__benefits">
@@ -329,7 +330,8 @@ function GetMyParcel() {
             </h2>
 
             <p>
-              Have your parcel reference, station and delivery address ready.
+              Have your parcel reference, pickup location and delivery address
+              ready.
             </p>
           </div>
 

@@ -6,6 +6,7 @@ import {
   FiCheck,
   FiCheckCircle,
   FiChevronDown,
+  FiCode,
   FiMail,
   FiMapPin,
   FiPackage,
@@ -126,6 +127,33 @@ function PartnerWithUs() {
           ))}
         </div>
       </section>
+
+      <section className="partner-developer">
+  <div className="site-container partner-developer__layout">
+    <div className="partner-developer__icon">
+      <FiCode aria-hidden="true" />
+    </div>
+
+    <div className="partner-developer__content">
+      <span>For technical teams</span>
+
+      <h2>Connect your business directly to Relay.</h2>
+
+      <p>
+        Approved partners can use the Relay Partner API to create delivery
+        orders, retrieve order statuses and receive delivery updates.
+      </p>
+    </div>
+
+    <Link
+      to="/developers/partner-api"
+      className="partner-developer__action"
+    >
+      View API documentation
+      <FiArrowUpRight aria-hidden="true" />
+    </Link>
+  </div>
+</section>
 
       <section className="partner-application" id="partner-form">
         <div className="site-container partner-application__layout">
