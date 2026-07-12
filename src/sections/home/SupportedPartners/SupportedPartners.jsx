@@ -129,6 +129,7 @@ function SupportedPartners() {
         </div>
       </div>
     </section>
+    
   );
 }
 

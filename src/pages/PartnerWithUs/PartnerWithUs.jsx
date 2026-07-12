@@ -18,6 +18,7 @@ import {
 
 import partnerImage from "../../assets/parcel2.png";
 import "./PartnerWithUs.css";
+import SupportedPartners from "../../sections/home/SupportedPartners/SupportedPartners";
 
 const partnershipBenefits = [
   {
@@ -471,6 +472,9 @@ function PartnerWithUs() {
           </div>
         </div>
       </section>
+
+            <SupportedPartners />
+
     </main>
   );
 }
